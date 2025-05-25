@@ -1,0 +1,25 @@
+{
+    "name": "CorruptedCardsManager",
+    "references": [
+        "UnboundLib",
+        "ModdingUtils",
+        "CardChoiceSpawnUniqueCardPatch",
+        "RandomCardsGenerator",
+        "FancyCardBar",
+        "Unity.TextMeshPro",
+        "RarityLib",
+        "Rarity Bundle"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "0Harmony.dll",
+        "BepInEx.dll",
+        "Assembly-CSharp.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
