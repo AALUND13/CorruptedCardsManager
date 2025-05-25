@@ -1,4 +1,5 @@
 ﻿using CorruptedCardsManager.Extensions;
+using CorruptedCardsManager.Utils;
 using HarmonyLib;
 using ModdingUtils.Patches;
 using System.Linq;
@@ -22,6 +23,8 @@ namespace CorruptedCardsManager.Patches {
 
             GameObject pickCard = CardChoicePatchGetRanomCard.OrignialGetRanomCard(CorruptedCardsGenerators.DrawableCorruptedCards.Keys.ToArray());
             __result = CorruptedCardsGenerators.DrawableCorruptedCards[pickCard.GetComponent<CardInfo>()].ReplaceCard(cardInfo);
+
+            LoggerUtils.LogInfo($"Corrupted Card Spawned: {cardInfo.cardName} -> {pickCard.GetComponent<CardInfo>().cardName}");
         }
     }
 }

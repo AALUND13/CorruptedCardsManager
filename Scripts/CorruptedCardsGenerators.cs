@@ -1,5 +1,6 @@
 ﻿using CorruptedCardsManager.MonoBehaviours;
 using CorruptedCardsManager.StatsGroup;
+using CorruptedCardsManager.Utils;
 using FancyCardBar;
 using RandomCardsGenerators;
 using RandomCardsGenerators.Cards;
@@ -35,6 +36,7 @@ namespace CorruptedCardsManager {
         }
 
         private static void CreateCardGenerators() {
+            LoggerUtils.LogInfo("Creating corrupted card generators...");
             CreateRandomCardsGenerator(CorruptedCardRarity.Trinket, new List<RandomStatGenerator> {
                 new DamageStatGenerator(-0.3f, 0.1f),
                 new ReloadTimeStatGenerator(-0.1f, 0.1f),
@@ -167,6 +169,7 @@ namespace CorruptedCardsManager {
                 new ExtraLiveStatGenerator(0, RandomStatsUtils.ScaleStatByIntensity(0.5f, 2f)),
                 new CorruptedCardSpawnChanceStatGenerator(-0.5f, 0.5f)
             }, 1, 6);
+            LoggerUtils.LogInfo("Created all corrupted card generators!");
         }
 
         private static void CreateRandomCardsGenerator(CorruptedCardRarity rarity, List<RandomStatGenerator> statGenerators, int min, int max) {
@@ -178,6 +181,7 @@ namespace CorruptedCardsManager {
 
             var drawableCard = new DrawableRandomStatsCard(cardGenerators[rarity]);
             DrawableCorruptedCards[drawableCard.CardInfo] = drawableCard;
+            LoggerUtils.LogInfo($"Created {rarity} corrupted card generator!");
         }
 
         private static RandomCardOption CreateCardOption(CardInfo.Rarity rarity, int min, int max) {

@@ -1,4 +1,5 @@
 using BepInEx;
+using BepInEx.Logging;
 using HarmonyLib;
 using UnityEngine;
 
@@ -18,10 +19,14 @@ namespace CorruptedCardsManager {
         
         internal static Main instance;
         internal static AssetBundle assets;
+        internal static ManualLogSource ModLogger;
         internal static GameObject corruptedCardFancyIconPrefab;
+
 
         void Awake() {
             instance = this;
+            ModLogger = Logger;
+
             new Harmony(modId).PatchAll();
 
             assets = Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("corruptedmanager_assets", typeof(Main).Assembly);
