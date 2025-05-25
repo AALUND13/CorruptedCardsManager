@@ -15,7 +15,7 @@ namespace CorruptedCardsManager {
     public class Main : BaseUnityPlugin {
         private const string modId = "com.aalund13.rounds.corrupted_manager";
         private const string modName = "Corrupted Manager";
-        internal const string modInitials = "CM";
+        internal const string modInitials = "CCM";
         
         internal static Main instance;
         internal static AssetBundle assets;
