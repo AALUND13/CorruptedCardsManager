@@ -170,7 +170,7 @@ namespace CorruptedCardsManager {
         }
 
         private static void CreateRandomCardsGenerator(CorruptedCardRarity rarity, List<RandomStatGenerator> statGenerators, int min, int max) {
-            cardGenerators[rarity] = new RandomCardsGenerator("CorruptedStatGenerator_Trinket", CreateCardOption(RarityUtils.GetRarity(rarity.ToString()), min, max), statGenerators);
+            cardGenerators[rarity] = new RandomCardsGenerator($"CorruptedStatGenerator_{rarity}", CreateCardOption(RarityUtils.GetRarity(rarity.ToString()), min, max), statGenerators);
             cardGenerators[rarity].OnCardGenerated += (generatedCardInfo) => {
                 generatedCardInfo.CardInfo.gameObject.AddComponent<FancyIcon>().fancyIcon = Main.corruptedCardFancyIconPrefab;
                 generatedCardInfo.CardInfo.gameObject.AddComponent<GlitchingCardEffect>();
