@@ -16,7 +16,7 @@ namespace CorruptedCardsManager.Patches {
             if(player == null) return;
 
             // Check if the card is a 'Null' card, if so skip it
-            if(cardInfo.name.StartsWith("___NULL___")) return;
+            if(cardInfo.GetComponents<MonoBehaviour>().Any(x => x.GetType().Name == "NullCard")) return;
 
             bool corruptedCardSpawnChance = Random.Range(0f, 1f) < player.data.GetAdditionalData().CorruptedCardSpawnChance;
             if(!corruptedCardSpawnChance) return;
