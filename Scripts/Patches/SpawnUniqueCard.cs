@@ -18,8 +18,8 @@ namespace CorruptedCardsManager.Patches {
             // Check if the card is a 'Null' card, if so skip it
             if(cardInfo.name.StartsWith("___NULL___")) return;
 
-            bool spawnGlitchCard = Random.Range(0f, 1f) < player.data.GetAdditionalData().CorruptedCardSpawnChance;
-            if(!spawnGlitchCard) return;
+            bool corruptedCardSpawnChance = Random.Range(0f, 1f) < player.data.GetAdditionalData().CorruptedCardSpawnChance;
+            if(!corruptedCardSpawnChance) return;
 
             GameObject pickCard = CardChoicePatchGetRanomCard.OrignialGetRanomCard(CorruptedCardsGenerators.DrawableCorruptedCards.Keys.ToArray());
             __result = CorruptedCardsGenerators.DrawableCorruptedCards[pickCard.GetComponent<CardInfo>()].ReplaceCard(cardInfo);
