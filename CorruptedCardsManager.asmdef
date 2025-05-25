@@ -8,7 +8,8 @@
         "FancyCardBar",
         "Unity.TextMeshPro",
         "RarityLib",
-        "Rarity Bundle"
+        "Rarity Bundle",
+        "TabInfo"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [],
