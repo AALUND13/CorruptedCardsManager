@@ -6,17 +6,19 @@ using UnityEngine;
 
 namespace CorruptedCardsManager.MonoBehaviours {
     public class GlitchingTextMono : MonoBehaviour {
-        public static Regex regex = new Regex(@"<glitch>(.*?)(<\/glitch>|$)", RegexOptions.Compiled);
+        private const string CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=<>?:\"{}|,./;'[]\\'~";
+        private const string GLITCH_TAG_REGEX = @"<glitch>(.*?)(<\/glitch>|$)";
+
+        public static Regex regex = new Regex(GLITCH_TAG_REGEX, RegexOptions.Compiled);
 
         public bool UseGlitchTag = false;
         public bool EffectAllText = true;
 
-        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=<>?:\"{}|,./;'[]\\'~";
         private List<(TextMeshProUGUI, string)> textMeshes = new List<(TextMeshProUGUI, string)>();
         private List<char> characters = new List<char>();
 
         private void Start() {
-            characters = chars.ToList();
+            characters = CHARACTERS.ToList();
             if(!EffectAllText) return;
 
             TextMeshProUGUI[] allChildren = gameObject.GetComponentsInChildren<TextMeshProUGUI>();
