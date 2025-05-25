@@ -9,12 +9,12 @@ namespace CorruptedCardsManager {
     [BepInDependency("com.aalund13.rounds.random_cards_generator", BepInDependency.DependencyFlags.HardDependency)]
     [BepInPlugin(modId, modName, "1.0.0")]
     [BepInProcess("Rounds.exe")]
-    public class CorruptedCardsManager : BaseUnityPlugin {
+    public class Main : BaseUnityPlugin {
         private const string modId = "com.aalund13.rounds.corrupted_manager";
         private const string modName = "Corrupted Manager";
         internal const string modInitials = "CM";
         
-        internal static CorruptedCardsManager instance;
+        internal static Main instance;
         internal static AssetBundle assets;
         internal static GameObject corruptedCardFancyIconPrefab;
 
@@ -22,7 +22,7 @@ namespace CorruptedCardsManager {
             instance = this;
             new Harmony(modId).PatchAll();
 
-            assets = Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("corruptedmanager_assets", typeof(CorruptedCardsManager).Assembly);
+            assets = Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("corruptedmanager_assets", typeof(Main).Assembly);
             corruptedCardFancyIconPrefab = assets.LoadAsset<GameObject>("I_Corrupted");
 
             CorruptedCardsGenerators.Init();
