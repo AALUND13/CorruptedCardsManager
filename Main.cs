@@ -25,11 +25,13 @@ namespace CorruptedCardsManager {
             new Harmony(modId).PatchAll();
 
             assets = Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("corruptedmanager_assets", typeof(Main).Assembly);
-            corruptedCardFancyIconPrefab = assets.LoadAsset<GameObject>("I_Corrupted");
-
-            CorruptedCardsGenerators.Init();
+            corruptedCardFancyIconPrefab = assets.LoadAsset<GameObject>("I_Corrupted");     
 
             Debug.Log($"{modName} loaded!");
+        }
+
+        void Start() {
+            CorruptedCardsGenerators.Init();
         }
     }
 }
