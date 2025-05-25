@@ -7,6 +7,8 @@ namespace CorruptedCardsManager {
     [BepInDependency("pykess.rounds.plugins.moddingutils", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.cardchoicespawnuniquecardpatch", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.aalund13.rounds.random_cards_generator", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("root.rarity.lib", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.CrazyCoders.Rounds.RarityBundle", BepInDependency.DependencyFlags.HardDependency)]
     [BepInPlugin(modId, modName, "1.0.0")]
     [BepInProcess("Rounds.exe")]
     public class Main : BaseUnityPlugin {
