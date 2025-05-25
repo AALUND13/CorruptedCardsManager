@@ -9,6 +9,8 @@ namespace CorruptedCardsManager {
                 (p) => $"{p.data.GetAdditionalData().CorruptedCardSpawnChance * 100:0}%");
             TabInfoManager.RegisterStat(CCMStatsCategory, "Corrupted Cards Spawn Chance Per Pick", (p) => p.data.GetAdditionalData().CorruptedCardSpawnChancePerPick != 0,
                 (p) => $"{p.data.GetAdditionalData().CorruptedCardSpawnChancePerPick * 100:0}%");
+            TabInfoManager.RegisterStat(CCMStatsCategory, "Corrupted Cards Spawn Chance Per Fight", (p) => p.data.GetAdditionalData().CorruptedCardSpawnChancePerFight != 0,
+                (p) => $"{p.data.GetAdditionalData().CorruptedCardSpawnChancePerFight * 100:0}%");
         }
     }
 }

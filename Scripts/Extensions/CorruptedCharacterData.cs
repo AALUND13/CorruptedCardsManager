@@ -5,10 +5,12 @@ namespace CorruptedCardsManager.Extensions {
     public class CorruptedCharacterData {
         public float CorruptedCardSpawnChance = 0f;
         public float CorruptedCardSpawnChancePerPick = 0f;
+        public float CorruptedCardSpawnChancePerFight = 0f;
 
         public void Reset() {
             CorruptedCardSpawnChance = 0f;
             CorruptedCardSpawnChancePerPick = 0f;
+            CorruptedCardSpawnChancePerFight = 0f;
         }
     }
 

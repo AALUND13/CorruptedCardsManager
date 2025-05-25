@@ -5,6 +5,7 @@ using HarmonyLib;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using UnboundLib.GameModes;
 using UnityEngine;
 
 namespace CorruptedCardsManager {
@@ -46,7 +47,18 @@ namespace CorruptedCardsManager {
             var Plugins = (List<BaseUnityPlugin>)typeof(BepInEx.Bootstrap.Chainloader).GetField("_plugins", BindingFlags.NonPublic | BindingFlags.Static).GetValue(null);
             if(Plugins.Exists(plugin => plugin.Info.Metadata.GUID == "com.willuwontu.rounds.tabinfo"))
                 TabinfoInterface.Setup();
+
+            GameModeManager.AddHook(GameModeHooks.HookBattleStart, WhenBattleStarts);
+
             CorruptedCardsGenerators.Init();
+        }
+
+        private IEnumerator WhenBattleStarts(IGameModeHandler handler) {
+            foreach(var player in PlayerManager.instance.players) {
+                player.data.GetAdditionalData().CorruptedCardSpawnChance += player.data.GetAdditionalData().CorruptedCardSpawnChancePerFight;
+            }
+
+            yield break;
         }
     }
 }
