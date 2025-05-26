@@ -8,7 +8,6 @@ namespace CorruptedCardsManager.Extensions {
         public float CorruptedCardSpawnChancePerFight = 0f;
 
         public void Reset() {
-            CorruptedCardSpawnChance = 0f;
             CorruptedCardSpawnChancePerPick = 0f;
             CorruptedCardSpawnChancePerFight = 0f;
         }
