@@ -49,6 +49,7 @@ namespace CorruptedCardsManager {
                 TabinfoInterface.Setup();
 
             GameModeManager.AddHook(GameModeHooks.HookBattleStart, WhenBattleStarts);
+            GameModeManager.AddHook(GameModeHooks.HookGameStart, WhenGameStart);
 
             CorruptedCardsManager.Init();
         }
@@ -57,7 +58,13 @@ namespace CorruptedCardsManager {
             foreach(var player in PlayerManager.instance.players) {
                 player.data.GetAdditionalData().CorruptedCardSpawnChance += player.data.GetAdditionalData().CorruptedCardSpawnChancePerFight;
             }
+            yield break;
+        }
 
+        private IEnumerator WhenGameStart(IGameModeHandler handler) {
+            foreach(var player in PlayerManager.instance.players) {
+                player.data.GetAdditionalData().CorruptedCardSpawnChance = 0f;
+            }
             yield break;
         }
     }
