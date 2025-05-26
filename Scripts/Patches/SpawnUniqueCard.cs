@@ -21,8 +21,8 @@ namespace CorruptedCardsManager.Patches {
             bool corruptedCardSpawnChance = Random.Range(0f, 1f) < player.data.GetAdditionalData().CorruptedCardSpawnChance;
             if(!corruptedCardSpawnChance) return;
 
-            GameObject pickCard = CardChoicePatchGetRanomCard.OrignialGetRanomCard(CorruptedCardsGenerators.DrawableCorruptedCards.Keys.ToArray());
-            __result = CorruptedCardsGenerators.DrawableCorruptedCards[pickCard.GetComponent<CardInfo>()].ReplaceCard(cardInfo);
+            GameObject pickCard = CardChoicePatchGetRanomCard.OrignialGetRanomCard(CorruptedCardsManager.DrawableCorruptedCards.Keys.ToArray());
+            __result = CorruptedCardsManager.DrawableCorruptedCards[pickCard.GetComponent<CardInfo>()].ReplaceCard(cardInfo);
 
             LoggerUtils.LogInfo($"Corrupted Card Spawned: {cardInfo.cardName} -> {pickCard.GetComponent<CardInfo>().cardName}");
         }

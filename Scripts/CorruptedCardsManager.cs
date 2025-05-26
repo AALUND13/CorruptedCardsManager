@@ -1,4 +1,5 @@
-﻿using CorruptedCardsManager.MonoBehaviours;
+﻿using CardChoiceSpawnUniqueCardPatch.CustomCategories;
+using CorruptedCardsManager.MonoBehaviours;
 using CorruptedCardsManager.StatsGroup;
 using CorruptedCardsManager.Utils;
 using FancyCardBar;
@@ -23,9 +24,10 @@ namespace CorruptedCardsManager {
         Divine,
     }
 
-    public static class CorruptedCardsGenerators {
-        public static ModRandomCardsGenerators<CorruptedCardRarity> CorruptedCardsGenerator;
+    public static class CorruptedCardsManager {
         public readonly static Dictionary<CardInfo, DrawableRandomStatsCard> DrawableCorruptedCards = new Dictionary<CardInfo, DrawableRandomStatsCard>();
+
+        public static ModRandomCardsGenerators<CorruptedCardRarity> CorruptedCardsGenerator;
 
         private readonly static Dictionary<CorruptedCardRarity, RandomCardsGenerator> cardGenerators = new Dictionary<CorruptedCardRarity, RandomCardsGenerator>();
 

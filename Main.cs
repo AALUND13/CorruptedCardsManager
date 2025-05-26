@@ -50,7 +50,7 @@ namespace CorruptedCardsManager {
 
             GameModeManager.AddHook(GameModeHooks.HookBattleStart, WhenBattleStarts);
 
-            CorruptedCardsGenerators.Init();
+            CorruptedCardsManager.Init();
         }
 
         private IEnumerator WhenBattleStarts(IGameModeHandler handler) {
