@@ -1,6 +1,5 @@
 ﻿using CorruptedCardsManager.Extensions;
 using HarmonyLib;
-using UnityEngine;
 
 namespace CorruptedCardsManager.Patches {
     [HarmonyPatch(typeof(CharacterStatModifiers), "ResetStats")]
