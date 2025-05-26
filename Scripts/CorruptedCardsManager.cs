@@ -26,6 +26,7 @@ namespace CorruptedCardsManager {
 
     public static class CorruptedCardsManager {
         public readonly static Dictionary<CardInfo, DrawableRandomStatsCard> DrawableCorruptedCards = new Dictionary<CardInfo, DrawableRandomStatsCard>();
+        public readonly static CardCategory CantCorruptedCardCategory = CustomCardCategories.instance.CardCategory("CantCorruptedCardCategory");
 
         public static ModRandomCardsGenerators<CorruptedCardRarity> CorruptedCardsGenerator;
 

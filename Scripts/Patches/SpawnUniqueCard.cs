@@ -19,7 +19,7 @@ namespace CorruptedCardsManager.Patches {
             if(cardInfo.GetComponents<MonoBehaviour>().Any(x => x.GetType().Name == "NullCard")) return;
 
             bool corruptedCardSpawnChance = Random.Range(0f, 1f) < player.data.GetAdditionalData().CorruptedCardSpawnChance;
-            if(!corruptedCardSpawnChance) return;
+            if(!corruptedCardSpawnChance || cardInfo.categories.Contains(CorruptedCardsManager.CantCorruptedCardCategory)) return;
 
             GameObject pickCard = CardChoicePatchGetRanomCard.OrignialGetRanomCard(CorruptedCardsManager.DrawableCorruptedCards.Keys.ToArray());
             __result = CorruptedCardsManager.DrawableCorruptedCards[pickCard.GetComponent<CardInfo>()].ReplaceCard(cardInfo);
