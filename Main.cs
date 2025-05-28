@@ -21,8 +21,8 @@ namespace CorruptedCardsManager {
     [BepInPlugin(modId, modName, "1.0.0")]
     [BepInProcess("Rounds.exe")]
     public class Main : BaseUnityPlugin {
-        private const string modId = "com.aalund13.rounds.corrupted_manager";
-        private const string modName = "Corrupted Manager";
+        private const string modId = "com.aalund13.rounds.corrupted_cards_manager";
+        private const string modName = "Corrupted Cards Manager";
         internal const string modInitials = "CCM";
 
         internal static Main instance;
