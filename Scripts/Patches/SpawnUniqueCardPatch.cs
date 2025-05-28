@@ -9,7 +9,7 @@ namespace CorruptedCardsManager.Patches {
     [HarmonyPatch(typeof(CardChoice), "SpawnUniqueCard")]
     [HarmonyAfter("com.Root.Null")]
     internal class SpawnUniqueCardPatch {
-        [HarmonyPriority(Priority.Last)]
+        [HarmonyPriority(Priority.First)]
         private static void Postfix(int ___pickrID, ref GameObject __result) {
             Player player = PlayerManager.instance.players.Find(p => p.playerID == ___pickrID);
             CardInfo cardInfo = __result.GetComponent<CardInfo>();
