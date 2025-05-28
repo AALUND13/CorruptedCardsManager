@@ -188,7 +188,7 @@ namespace CorruptedCardsManager {
         }
 
         private static RandomCardOption CreateCardOption(CardInfo.Rarity rarity, int min, int max) {
-            return new RandomCardOption("Corrupted Card", rarity, Main.modInitials, "A corrupted card", "CO", min, max);
+            return new RandomCardOption("Corrupted Card", Main.modInitials, "A corrupted card", "CO", min, max, rarity, CardThemeColor.CardThemeColorType.EvilPurple);
         }
     }
 }
