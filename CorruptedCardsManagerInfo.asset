@@ -15,7 +15,7 @@ MonoBehaviour:
   ModName: CorruptedCardsManager
   Author: AALUND13
   Version: 1.0.0
-  WebsiteURL: 
+  WebsiteURL: https://github.com/AALUND13/CorruptedCardsManager
   Description: A manager for 'Corrupted' cards.
   BeforeBuildCommand: 
   AfterBuildCommand: 
@@ -25,6 +25,7 @@ MonoBehaviour:
   - 'Pykess-CardChoiceSpawnUniqueCardPatch-0.1.10 '
   - Root-RarityLib-1.2.8
   - CrazyCoders-RarityBundle-0.2.1
+  - AALUND13-RandomCardsGenerator-1.0.0
   DllDependencies: []
   AssemblyDefinitionDependencies: []
   IncludeInAllExports: 1
