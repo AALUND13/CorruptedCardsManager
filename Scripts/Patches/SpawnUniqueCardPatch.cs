@@ -1,5 +1,4 @@
 ﻿using CorruptedCardsManager.Extensions;
-using CorruptedCardsManager.Utils;
 using HarmonyLib;
 using ModdingUtils.Patches;
 using System.Linq;
@@ -9,7 +8,7 @@ namespace CorruptedCardsManager.Patches {
     [HarmonyPatch(typeof(CardChoice), "SpawnUniqueCard")]
     [HarmonyAfter("com.Root.Null")]
     internal class SpawnUniqueCardPatch {
-        [HarmonyPriority(Priority.First)]
+        [HarmonyPriority(Priority.Last)]
         private static void Postfix(int ___pickrID, ref GameObject __result) {
             Player player = PlayerManager.instance.players.Find(p => p.playerID == ___pickrID);
             CardInfo cardInfo = __result.GetComponent<CardInfo>();
@@ -23,8 +22,6 @@ namespace CorruptedCardsManager.Patches {
 
             GameObject pickCard = CardChoicePatchGetRanomCard.OrignialGetRanomCard(CorruptedCardsManager.DrawableCorruptedCards.Keys.ToArray());
             __result = CorruptedCardsManager.DrawableCorruptedCards[pickCard.GetComponent<CardInfo>()].ReplaceCard(cardInfo);
-
-            LoggerUtils.LogInfo($"Corrupted Card Spawned: {cardInfo.cardName} -> {pickCard.GetComponent<CardInfo>().cardName}");
         }
     }
 }
