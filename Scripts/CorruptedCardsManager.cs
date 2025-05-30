@@ -28,14 +28,15 @@ namespace CorruptedCardsManager {
         public readonly static Dictionary<CardInfo, DrawableRandomCard> DrawableCorruptedCards = new Dictionary<CardInfo, DrawableRandomCard>();
         public readonly static CardCategory CantCorruptedCardCategory = CustomCardCategories.instance.CardCategory("CantCorruptedCardCategory");
 
-        public static ModRandomCardsGenerators<CorruptedCardRarity> CorruptedCardsGenerator;
+        public static ModRandomCardsGenerators<CorruptedCardRarity> CorruptedCardsGenerators;
 
         private readonly static Dictionary<CorruptedCardRarity, RandomCardsGenerator> cardGenerators = new Dictionary<CorruptedCardRarity, RandomCardsGenerator>();
 
-
         internal static void Init() {
             CreateCardGenerators();
-            CorruptedCardsGenerator = new ModRandomCardsGenerators<CorruptedCardRarity>(cardGenerators);
+            CorruptedCardsGenerators = new ModRandomCardsGenerators<CorruptedCardRarity>(cardGenerators);
+            
+            LoggerUtils.LogInfo("Corrupted Cards Manager initialized!");
         }
 
         private static void CreateCardGenerators() {
