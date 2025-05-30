@@ -37,6 +37,9 @@ namespace CorruptedCardsManager {
             CorruptedCardsGenerators = new ModRandomCardsGenerators<CorruptedCardRarity>(cardGenerators);
             
             LoggerUtils.LogInfo("Corrupted Cards Manager initialized!");
+#if DEBUG
+            LoggerUtils.LogInfo(GenerateCorruptedCardMarkdown());
+#endif
         }
 
         private static void CreateCardGenerators() {
@@ -191,5 +194,22 @@ namespace CorruptedCardsManager {
         private static RandomCardOption CreateCardOption(CardInfo.Rarity rarity, int min, int max) {
             return new RandomCardOption("Corrupted Card", Main.modInitials, "A corrupted card", "CO", min, max, rarity, CardThemeColor.CardThemeColorType.EvilPurple);
         }
+
+#if DEBUG
+        /// <summary>
+        /// Only used to generate a markdown file for all the corrupted card rarities and their stats.
+        /// </summary>
+        private static string GenerateCorruptedCardMarkdown() {
+            var sb = new System.Text.StringBuilder();
+            sb.AppendLine("## Corrupted Cards Rarities");
+            foreach(var generator in cardGenerators) {
+                sb.AppendLine($"### {generator.Key}");
+                foreach(var stat in generator.Value.StatGenerators) {
+                    sb.AppendLine($"- **{stat.StatName}**: `{stat.GetStatString(stat.MinValue)}` - `{stat.GetStatString(stat.MaxValue)}`");
+                }
+            }
+            return sb.ToString();
+        }
+#endif
     }
 }
