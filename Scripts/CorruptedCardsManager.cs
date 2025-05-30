@@ -25,7 +25,7 @@ namespace CorruptedCardsManager {
     }
 
     public static class CorruptedCardsManager {
-        public readonly static Dictionary<CardInfo, DrawableRandomStatsCard> DrawableCorruptedCards = new Dictionary<CardInfo, DrawableRandomStatsCard>();
+        public readonly static Dictionary<CardInfo, DrawableRandomCard> DrawableCorruptedCards = new Dictionary<CardInfo, DrawableRandomCard>();
         public readonly static CardCategory CantCorruptedCardCategory = CustomCardCategories.instance.CardCategory("CantCorruptedCardCategory");
 
         public static ModRandomCardsGenerators<CorruptedCardRarity> CorruptedCardsGenerator;
@@ -182,7 +182,7 @@ namespace CorruptedCardsManager {
                 generatedCardInfo.CardInfo.gameObject.AddComponent<GlitchingCardEffect>();
             };
 
-            var drawableCard = new DrawableRandomStatsCard(cardGenerators[rarity]);
+            var drawableCard = new DrawableRandomCard(cardGenerators[rarity]);
             DrawableCorruptedCards[drawableCard.CardInfo] = drawableCard;
             LoggerUtils.LogInfo($"Created {rarity} corrupted card generator!");
         }
