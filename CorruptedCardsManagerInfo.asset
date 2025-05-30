@@ -16,7 +16,8 @@ MonoBehaviour:
   Author: AALUND13
   Version: 1.0.0
   WebsiteURL: https://github.com/AALUND13/CorruptedCardsManager
-  Description: A manager for 'Corrupted' cards.
+  Description: The 'Corrupted Cards Manager' is a mod for creating and working with
+    'corrupted' cards.
   BeforeBuildCommand: 
   AfterBuildCommand: 
   Dependencies:
