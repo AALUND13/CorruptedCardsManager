@@ -84,8 +84,8 @@ GameObject:
   - component: {fileID: 3335356812067941689}
   - component: {fileID: 6588516013660199272}
   - component: {fileID: 5273802558801135157}
-  - component: {fileID: 1955218274115855753}
-  - component: {fileID: 3175835345235060783}
+  - component: {fileID: 6171856429969414533}
+  - component: {fileID: 7795019054545449566}
   m_Layer: 10
   m_Name: I_Corrupted
   m_TagString: 
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
---- !u!114 &1955218274115855753
+--- !u!114 &6171856429969414533
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,11 +170,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1790492772407996393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ce3a67596452b64488d232debbd10a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 747bfbec69ba53e4a9fb156db2941211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
---- !u!114 &3175835345235060783
+--- !u!114 &7795019054545449566
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -183,6 +183,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1790492772407996393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4910c18a424d064baf76ba398d1e0a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 624ef61de167c774294f2c582d476bed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
