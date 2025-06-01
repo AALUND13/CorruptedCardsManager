@@ -73,7 +73,6 @@ namespace CorruptedCardsManager {
                 new BlockCooldownStatGenerator(-0.1f, 0.1f),
                 new BulletSpeedStatGenerator(-0.3f, 0.35f),
                 new AmmoStatGenerator(-2f, 3f),
-                new RegenStatGenerator(0, 10),
                 new CorruptedCardSpawnChanceStatGenerator(-0.075f, 0.075f)
             }, 1, 3);
             CreateRandomCardsGenerator(CorruptedCardRarity.Uncommon, new List<RandomStatGenerator> {
@@ -85,7 +84,7 @@ namespace CorruptedCardsManager {
                 new BlockCooldownStatGenerator(-0.15f, 0.15f),
                 new BulletSpeedStatGenerator(-0.3f, 0.4f),
                 new AmmoStatGenerator(-2f, 4f),
-                new RegenStatGenerator(0, 15),
+                new RegenStatGenerator(0, 5f),
                 new AdditionalBlocksStatGenerator(0, RandomStatsUtils.ScaleStatByIntensity(0.15f, 1f)),
                 new CorruptedCardSpawnChanceStatGenerator(-0.1f, 0.1f)
             }, 1, 3);
@@ -98,7 +97,7 @@ namespace CorruptedCardsManager {
                 new BlockCooldownStatGenerator(-0.20f, 0.20f),
                 new BulletSpeedStatGenerator(-0.3f, 0.5f),
                 new AmmoStatGenerator(-3f, 5f),
-                new RegenStatGenerator(0, 20),
+                new RegenStatGenerator(0, 8),
                 new AdditionalBlocksStatGenerator(0, RandomStatsUtils.ScaleStatByIntensity(0.2f, 1f)),
                 new CorruptedCardSpawnChanceStatGenerator(-0.15f, 0.15f)
             }, 1, 4);
@@ -111,7 +110,7 @@ namespace CorruptedCardsManager {
                 new BlockCooldownStatGenerator(-0.25f, 0.20f),
                 new BulletSpeedStatGenerator(-0.3f, 0.60f),
                 new AmmoStatGenerator(-3f, 6f),
-                new RegenStatGenerator(0, 35),
+                new RegenStatGenerator(0, 15f),
                 new JumpStatGenerator(0f, 1f),
                 new AdditionalBlocksStatGenerator(0, RandomStatsUtils.ScaleStatByIntensity(0.25f, 1f)),
                 new CorruptedCardSpawnChanceStatGenerator(-0.2f, 0.2f)
@@ -125,7 +124,7 @@ namespace CorruptedCardsManager {
                 new BlockCooldownStatGenerator(-0.3f, 0.25f),
                 new BulletSpeedStatGenerator(-0.3f, 0.65f),
                 new AmmoStatGenerator(-4f, 7f),
-                new RegenStatGenerator(0, 40),
+                new RegenStatGenerator(0, 25f),
                 new JumpStatGenerator(0f, 1.5f),
                 new AdditionalBlocksStatGenerator(0, RandomStatsUtils.ScaleStatByIntensity(0.3f, 1f)),
                 new ExtraLiveStatGenerator(0, RandomStatsUtils.ScaleStatByIntensity(0.275f, 1f)),
@@ -140,7 +139,7 @@ namespace CorruptedCardsManager {
                 new BlockCooldownStatGenerator(-0.35f, 0.25f),
                 new BulletSpeedStatGenerator(-0.3f, 0.75f),
                 new AmmoStatGenerator(-4f, 8f),
-                new RegenStatGenerator(0, 50),
+                new RegenStatGenerator(0, 35),
                 new JumpStatGenerator(0f, 2f),
                 new AdditionalBlocksStatGenerator(0, RandomStatsUtils.ScaleStatByIntensity(0.4f, 1f)),
                 new ExtraLiveStatGenerator(0, RandomStatsUtils.ScaleStatByIntensity(0.35f, 1f)),
@@ -155,7 +154,7 @@ namespace CorruptedCardsManager {
                 new BlockCooldownStatGenerator(-0.4f, 0.25f),
                 new BulletSpeedStatGenerator(-0.3f, 0.8f),
                 new AmmoStatGenerator(-5f, 10f),
-                new RegenStatGenerator(0, 65),
+                new RegenStatGenerator(0, 45),
                 new JumpStatGenerator(0f, 2.5f),
                 new AdditionalBlocksStatGenerator(0, RandomStatsUtils.ScaleStatByIntensity(0.5f, 1f)),
                 new ExtraLiveStatGenerator(0, RandomStatsUtils.ScaleStatByIntensity(0.45f, 1f)),
@@ -170,7 +169,7 @@ namespace CorruptedCardsManager {
                 new BlockCooldownStatGenerator(-0.45f, 0.25f),
                 new BulletSpeedStatGenerator(-0.3f, 0.85f),
                 new AmmoStatGenerator(-6f, 15f),
-                new RegenStatGenerator(0, 100),
+                new RegenStatGenerator(0, 60),
                 new JumpStatGenerator(0f, 3f),
                 new AdditionalBlocksStatGenerator(0, RandomStatsUtils.ScaleStatByIntensity(0.2f, 2f)),
                 new ExtraLiveStatGenerator(0, RandomStatsUtils.ScaleStatByIntensity(0.5f, 2f)),
