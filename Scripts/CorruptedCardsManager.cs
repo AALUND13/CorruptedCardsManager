@@ -184,7 +184,7 @@ namespace CorruptedCardsManager {
                 generatedCardInfo.CardInfo.gameObject.AddComponent<FancyIcon>().fancyIcon = Main.corruptedCardFancyIconPrefab;
                 generatedCardInfo.CardInfo.gameObject.AddComponent<GlitchingCardEffect>();
             };
-
+            
             var drawableCard = new DrawableRandomCard(cardGenerators[rarity]);
             DrawableCorruptedCards[drawableCard.CardInfo] = drawableCard;
             LoggerUtils.LogInfo($"Created {rarity} corrupted card generator!");
@@ -203,9 +203,13 @@ namespace CorruptedCardsManager {
             sb.AppendLine("## Corrupted Cards Rarities");
             foreach(var generator in cardGenerators) {
                 sb.AppendLine($"### {generator.Key}");
+                sb.AppendLine($"- **Stats**:");
                 foreach(var stat in generator.Value.StatGenerators) {
-                    sb.AppendLine($"- **{stat.StatName}**: `{stat.GetStatString(stat.MinValue)}` - `{stat.GetStatString(stat.MaxValue)}`");
+                    sb.AppendLine($"  - **{stat.StatName}**: `{stat.GetStatString(stat.MinValue)}` - `{stat.GetStatString(stat.MaxValue)}`");
                 }
+                sb.AppendLine($"- **Card Option**:");
+                sb.AppendLine($"  - **Min Stats**: {generator.Value.RandomCardOption.Min}");
+                sb.AppendLine($"  - **Max Stats**: {generator.Value.RandomCardOption.Max}");
             }
             return sb.ToString();
         }
