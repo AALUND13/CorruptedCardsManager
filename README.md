@@ -3,7 +3,7 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
 ## Corrupted Cards Rarities
 ### Trinket
 - **Stats**:
-  - **Damage**: `-30%` - `+10%`
+  - **Damage**: `-15%` - `+10%`
   - **Reload Time**: `-10%` - `+10%`
   - **Attack Speed**: `-10%` - `+10%`
   - **Movement Speed**: `-5%` - `+5%`
@@ -16,8 +16,8 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
 ### Common
 - **Stats**:
   - **Damage**: `-30%` - `+30%`
-  - **Reload Time**: `-30%` - `+30%`
-  - **Attack Speed**: `-30%` - `+30%`
+  - **Reload Time**: `-30%` - `+15%`
+  - **Attack Speed**: `-30%` - `+15%`
   - **Movement Speed**: `-10%` - `+10%`
   - **Health**: `-30%` - `+30%`
   - **Block Cooldown**: `-5%` - `+5%`
@@ -29,11 +29,11 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
   - **Max Stats**: 3
 ### Scarce
 - **Stats**:
-  - **Damage**: `-30%` - `+40%`
-  - **Reload Time**: `-40%` - `+30%`
-  - **Attack Speed**: `-40%` - `+30%`
+  - **Damage**: `-35%` - `+40%`
+  - **Reload Time**: `-40%` - `+20%`
+  - **Attack Speed**: `-40%` - `+20%`
   - **Movement Speed**: `-15%` - `+20%`
-  - **Health**: `-30%` - `+40%`
+  - **Health**: `-25%` - `+40%`
   - **Block Cooldown**: `-10%` - `+10%`
   - **Bullet Speed**: `-30%` - `+35%`
   - **Ammo**: `-2` - `+3`
@@ -43,11 +43,11 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
   - **Max Stats**: 3
 ### Uncommon
 - **Stats**:
-  - **Damage**: `-30%` - `+50%`
-  - **Reload Time**: `-45%` - `+30%`
-  - **Attack Speed**: `-45%` - `+30%`
+  - **Damage**: `-40%` - `+50%`
+  - **Reload Time**: `-45%` - `+26%`
+  - **Attack Speed**: `-45%` - `+25%`
   - **Movement Speed**: `-15%` - `+25%`
-  - **Health**: `-30%` - `+50%`
+  - **Health**: `-25%` - `+50%`
   - **Block Cooldown**: `-15%` - `+15%`
   - **Bullet Speed**: `-30%` - `+40%`
   - **Ammo**: `-2` - `+4`
@@ -59,9 +59,9 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
   - **Max Stats**: 3
 ### Exotic
 - **Stats**:
-  - **Damage**: `-30%` - `+60%`
-  - **Reload Time**: `-50%` - `+30%`
-  - **Attack Speed**: `-50%` - `+30%`
+  - **Damage**: `-45%` - `+60%`
+  - **Reload Time**: `-50%` - `+25%`
+  - **Attack Speed**: `-50%` - `+25%`
   - **Movement Speed**: `-20%` - `+30%`
   - **Health**: `-30%` - `+60%`
   - **Block Cooldown**: `-20%` - `+20%`
@@ -75,11 +75,11 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
   - **Max Stats**: 4
 ### Rare
 - **Stats**:
-  - **Damage**: `-30%` - `+80%`
+  - **Damage**: `-50%` - `+80%`
   - **Reload Time**: `-60%` - `+30%`
   - **Attack Speed**: `-60%` - `+30%`
   - **Movement Speed**: `-20%` - `+35%`
-  - **Health**: `-30%` - `+75%`
+  - **Health**: `-35%` - `+75%`
   - **Block Cooldown**: `-25%` - `+20%`
   - **Bullet Speed**: `-30%` - `+60%`
   - **Ammo**: `-3` - `+6`
@@ -92,11 +92,11 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
   - **Max Stats**: 4
 ### Epic
 - **Stats**:
-  - **Damage**: `-30%` - `+90%`
-  - **Reload Time**: `-70%` - `+30%`
-  - **Attack Speed**: `-70%` - `+30%`
+  - **Damage**: `-55%` - `+90%`
+  - **Reload Time**: `-70%` - `+35%`
+  - **Attack Speed**: `-70%` - `+35%`
   - **Movement Speed**: `-25%` - `+40%`
-  - **Health**: `-30%` - `+90%`
+  - **Health**: `-45%` - `+90%`
   - **Block Cooldown**: `-30%` - `+25%`
   - **Bullet Speed**: `-30%` - `+65%`
   - **Ammo**: `-4` - `+7`
@@ -110,11 +110,11 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
   - **Max Stats**: 5
 ### Legendary
 - **Stats**:
-  - **Damage**: `-30%` - `+100%`
-  - **Reload Time**: `-75%` - `+30%`
-  - **Attack Speed**: `-75%` - `+30%`
+  - **Damage**: `-60%` - `+100%`
+  - **Reload Time**: `-75%` - `+40%`
+  - **Attack Speed**: `-75%` - `+40%`
   - **Movement Speed**: `-25%` - `+45%`
-  - **Health**: `-30%` - `+100%`
+  - **Health**: `-50%` - `+100%`
   - **Block Cooldown**: `-35%` - `+25%`
   - **Bullet Speed**: `-30%` - `+75%`
   - **Ammo**: `-4` - `+8`
@@ -128,11 +128,11 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
   - **Max Stats**: 5
 ### Mythical
 - **Stats**:
-  - **Damage**: `-30%` - `+112%`
-  - **Reload Time**: `-80%` - `+30%`
-  - **Attack Speed**: `-80%` - `+30%`
-  - **Movement Speed**: `-25%` - `+50%`
-  - **Health**: `-30%` - `+125%`
+  - **Damage**: `-65%` - `+125%`
+  - **Reload Time**: `-80%` - `+45%`
+  - **Attack Speed**: `-80%` - `+45%`
+  - **Movement Speed**: `-30%` - `+50%`
+  - **Health**: `-55%` - `+125%`
   - **Block Cooldown**: `-40%` - `+25%`
   - **Bullet Speed**: `-30%` - `+80%`
   - **Ammo**: `-5` - `+10`
@@ -146,11 +146,11 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
   - **Max Stats**: 6
 ### Divine
 - **Stats**:
-  - **Damage**: `-30%` - `+150%`
-  - **Reload Time**: `-85%` - `+30%`
-  - **Attack Speed**: `-85%` - `+30%`
-  - **Movement Speed**: `-25%` - `+55%`
-  - **Health**: `-30%` - `+150%`
+  - **Damage**: `-70%` - `+150%`
+  - **Reload Time**: `-85%` - `+50%`
+  - **Attack Speed**: `-85%` - `+50%`
+  - **Movement Speed**: `-35%` - `+55%`
+  - **Health**: `-65%` - `+150%`
   - **Block Cooldown**: `-45%` - `+25%`
   - **Bullet Speed**: `-30%` - `+85%`
   - **Ammo**: `-6` - `+15`
@@ -159,6 +159,6 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
   - **Additiona Block**: `0` - `+1`
   - **Extra Live**: `0` - `+2`
   - **Corrupted Cards Spawn Chance**: `-50%` - `+50%`
-- **Cards Options**:
+- **Card Option**:
   - **Min Stats**: 1
   - **Max Stats**: 6
