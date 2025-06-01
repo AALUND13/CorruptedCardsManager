@@ -28,7 +28,6 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
 - **Block Cooldown**: `-10%` - `+10%`
 - **Bullet Speed**: `-30%` - `+35%`
 - **Ammo**: `-2` - `+3`
-- **Regen**: `0` - `+10`
 - **Corrupted Cards Spawn Chance**: `-8%` - `+8%`
 ### Uncommon
 - **Damage**: `-30%` - `+50%`
@@ -39,7 +38,7 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
 - **Block Cooldown**: `-15%` - `+15%`
 - **Bullet Speed**: `-30%` - `+40%`
 - **Ammo**: `-2` - `+4`
-- **Regen**: `0` - `+15`
+- **Regen**: `0` - `+5`
 - **Additiona Block**: `0` - `+1`
 - **Corrupted Cards Spawn Chance**: `-10%` - `+10%`
 ### Exotic
@@ -51,7 +50,7 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
 - **Block Cooldown**: `-20%` - `+20%`
 - **Bullet Speed**: `-30%` - `+50%`
 - **Ammo**: `-3` - `+5`
-- **Regen**: `0` - `+20`
+- **Regen**: `0` - `+8`
 - **Additiona Block**: `0` - `+1`
 - **Corrupted Cards Spawn Chance**: `-15%` - `+15%`
 ### Rare
@@ -63,7 +62,7 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
 - **Block Cooldown**: `-25%` - `+20%`
 - **Bullet Speed**: `-30%` - `+60%`
 - **Ammo**: `-3` - `+6`
-- **Regen**: `0` - `+35`
+- **Regen**: `0` - `+15`
 - **Jump**: `0` - `+1`
 - **Additiona Block**: `0` - `+1`
 - **Corrupted Cards Spawn Chance**: `-20%` - `+20%`
@@ -76,7 +75,7 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
 - **Block Cooldown**: `-30%` - `+25%`
 - **Bullet Speed**: `-30%` - `+65%`
 - **Ammo**: `-4` - `+7`
-- **Regen**: `0` - `+40`
+- **Regen**: `0` - `+25`
 - **Jump**: `0` - `+2`
 - **Additiona Block**: `0` - `+1`
 - **Extra Live**: `0` - `+1`
@@ -90,7 +89,7 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
 - **Block Cooldown**: `-35%` - `+25%`
 - **Bullet Speed**: `-30%` - `+75%`
 - **Ammo**: `-4` - `+8`
-- **Regen**: `0` - `+50`
+- **Regen**: `0` - `+35`
 - **Jump**: `0` - `+2`
 - **Additiona Block**: `0` - `+1`
 - **Extra Live**: `0` - `+1`
@@ -104,7 +103,7 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
 - **Block Cooldown**: `-40%` - `+25%`
 - **Bullet Speed**: `-30%` - `+80%`
 - **Ammo**: `-5` - `+10`
-- **Regen**: `0` - `+65`
+- **Regen**: `0` - `+45`
 - **Jump**: `0` - `+2`
 - **Additiona Block**: `0` - `+1`
 - **Extra Live**: `0` - `+1`
@@ -118,7 +117,7 @@ The **Corrupted Cards Manager** is a mod for creating and working with `corrupte
 - **Block Cooldown**: `-45%` - `+25%`
 - **Bullet Speed**: `-30%` - `+85%`
 - **Ammo**: `-6` - `+15`
-- **Regen**: `0` - `+100`
+- **Regen**: `0` - `+60`
 - **Jump**: `0` - `+3`
 - **Additiona Block**: `0` - `+1`
 - **Extra Live**: `0` - `+2`
